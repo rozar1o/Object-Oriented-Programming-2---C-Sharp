@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B8C2D7D-FF8D-4337-A8DB-A9918EF65701}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CourierManagement</RootNamespace>
+    <AssemblyName>CourierManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin GUI\AdminAddBranchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin GUI\AdminAddBranchForm.Designer.cs">
+      <DependentUpon>AdminAddBranchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin GUI\AdminAddWorkerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin GUI\AdminAddWorkerForm.Designer.cs">
+      <DependentUpon>AdminAddWorkerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin GUI\AdminHomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin GUI\AdminHomeForm.Designer.cs">
+      <DependentUpon>AdminHomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin GUI\AdminShowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin GUI\AdminShowForm.Designer.cs">
+      <DependentUpon>AdminShowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin GUI\AdminViewWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin GUI\AdminViewWorker.Designer.cs">
+      <DependentUpon>AdminViewWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer GUI\CustOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer GUI\CustOrderForm.Designer.cs">
+      <DependentUpon>CustOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer GUI\CustTermCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer GUI\CustTermCondition.Designer.cs">
+      <DependentUpon>CustTermCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee GUI\EmpAddCust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee GUI\EmpAddCust.Designer.cs">
+      <DependentUpon>EmpAddCust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee GUI\EmpEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee GUI\EmpEditForm.Designer.cs">
+      <DependentUpon>EmpEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee GUI\EmpHelpline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee GUI\EmpHelpline.Designer.cs">
+      <DependentUpon>EmpHelpline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee GUI\EmpProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee GUI\EmpProfile.Designer.cs">
+      <DependentUpon>EmpProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee GUI\EmpReceive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee GUI\EmpReceive.Designer.cs">
+      <DependentUpon>EmpReceive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee GUI\EmpRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee GUI\EmpRegistration.Designer.cs">
+      <DependentUpon>EmpRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee GUI\EmpShowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee GUI\EmpShowForm.Designer.cs">
+      <DependentUpon>EmpShowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee GUI\EmpTermCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee GUI\EmpTermCondition.Designer.cs">
+      <DependentUpon>EmpTermCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee GUI\EmpVerifyCust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee GUI\EmpVerifyCust.Designer.cs">
+      <DependentUpon>EmpVerifyCust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\BaseEntity.cs" />
+    <Compile Include="Customer GUI\CustEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer GUI\CustEditForm.Designer.cs">
+      <DependentUpon>CustEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DataAccess.cs" />
+    <Compile Include="Entities\Branch.cs" />
+    <Compile Include="Entities\Customers.cs" />
+    <Compile Include="Entities\Employee.cs" />
+    <Compile Include="Entities\Employee_Problem.cs" />
+    <Compile Include="Entities\Price.cs" />
+    <Compile Include="Entities\Product.cs" />
+    <Compile Include="Customer GUI\CustHomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer GUI\CustHomeForm.Designer.cs">
+      <DependentUpon>CustHomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Show.cs" />
+    <Compile Include="General GUI\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General GUI\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General GUI\PassChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General GUI\PassChange.Designer.cs">
+      <DependentUpon>PassChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer GUI\CustRegForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer GUI\CustRegForm.Designer.cs">
+      <DependentUpon>CustRegForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer GUI\CustSerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer GUI\CustSerForm.Designer.cs">
+      <DependentUpon>CustSerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer GUI\CustTrackForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer GUI\CustTrackForm.Designer.cs">
+      <DependentUpon>CustTrackForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee GUI\EmpHomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee GUI\EmpHomeForm.Designer.cs">
+      <DependentUpon>EmpHomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entities\Users.cs" />
+    <EmbeddedResource Include="Admin GUI\AdminAddBranchForm.resx">
+      <DependentUpon>AdminAddBranchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin GUI\AdminAddWorkerForm.resx">
+      <DependentUpon>AdminAddWorkerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin GUI\AdminHomeForm.resx">
+      <DependentUpon>AdminHomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin GUI\AdminShowForm.resx">
+      <DependentUpon>AdminShowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin GUI\AdminViewWorker.resx">
+      <DependentUpon>AdminViewWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer GUI\CustEditForm.resx">
+      <DependentUpon>CustEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer GUI\CustHomeForm.resx">
+      <DependentUpon>CustHomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer GUI\CustOrderForm.resx">
+      <DependentUpon>CustOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer GUI\CustTermCondition.resx">
+      <DependentUpon>CustTermCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee GUI\EmpAddCust.resx">
+      <DependentUpon>EmpAddCust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee GUI\EmpEditForm.resx">
+      <DependentUpon>EmpEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee GUI\EmpHelpline.resx">
+      <DependentUpon>EmpHelpline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee GUI\EmpProfile.resx">
+      <DependentUpon>EmpProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee GUI\EmpReceive.resx">
+      <DependentUpon>EmpReceive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee GUI\EmpRegistration.resx">
+      <DependentUpon>EmpRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee GUI\EmpShowForm.resx">
+      <DependentUpon>EmpShowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee GUI\EmpTermCondition.resx">
+      <DependentUpon>EmpTermCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee GUI\EmpVerifyCust.resx">
+      <DependentUpon>EmpVerifyCust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General GUI\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General GUI\PassChange.resx">
+      <DependentUpon>PassChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer GUI\CustRegForm.resx">
+      <DependentUpon>CustRegForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer GUI\CustSerForm.resx">
+      <DependentUpon>CustSerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer GUI\CustTrackForm.resx">
+      <DependentUpon>CustTrackForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee GUI\EmpHomeForm.resx">
+      <DependentUpon>EmpHomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Setting.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pass1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\username.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userlogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit profile - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit profile1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\service history.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forgotPassB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changepass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Customer_p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Customer_p1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_p1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\place_order2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terms-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logOut1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helpLine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logOut11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add Emp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\memberList-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\memberList-5121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post order.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-customer-account.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receive.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terms-11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hand_delivery.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verify cust.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile_det.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile_det1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\position_emp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emp_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_Emp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_Branch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helpLine1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registration_Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\branch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\branch1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\problem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delivery_Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-form-blue-background_23-2147727234.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ForgotPassBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forgetpassbackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-form-blue-background_23-21477272341.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-form-blue-background_23-21477272342.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eye1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eye1 - Copy %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye2 - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting_back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

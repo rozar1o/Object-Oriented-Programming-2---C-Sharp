@@ -1,0 +1,10 @@
+C:\Users\RAMISA\Desktop\OOP2\WindowsFormCalculator\WindowsFormCalculator\bin\Debug\WindowsFormCalculator.exe.config
+C:\Users\RAMISA\Desktop\OOP2\WindowsFormCalculator\WindowsFormCalculator\bin\Debug\WindowsFormCalculator.exe
+C:\Users\RAMISA\Desktop\OOP2\WindowsFormCalculator\WindowsFormCalculator\bin\Debug\WindowsFormCalculator.pdb
+C:\Users\RAMISA\Desktop\OOP2\WindowsFormCalculator\WindowsFormCalculator\obj\Debug\WindowsFormCalculator.csprojAssemblyReference.cache
+C:\Users\RAMISA\Desktop\OOP2\WindowsFormCalculator\WindowsFormCalculator\obj\Debug\WindowsFormCalculator.Form1.resources
+C:\Users\RAMISA\Desktop\OOP2\WindowsFormCalculator\WindowsFormCalculator\obj\Debug\WindowsFormCalculator.Properties.Resources.resources
+C:\Users\RAMISA\Desktop\OOP2\WindowsFormCalculator\WindowsFormCalculator\obj\Debug\WindowsFormCalculator.csproj.GenerateResource.cache
+C:\Users\RAMISA\Desktop\OOP2\WindowsFormCalculator\WindowsFormCalculator\obj\Debug\WindowsFormCalculator.csproj.CoreCompileInputs.cache
+C:\Users\RAMISA\Desktop\OOP2\WindowsFormCalculator\WindowsFormCalculator\obj\Debug\WindowsFormCalculator.exe
+C:\Users\RAMISA\Desktop\OOP2\WindowsFormCalculator\WindowsFormCalculator\obj\Debug\WindowsFormCalculator.pdb

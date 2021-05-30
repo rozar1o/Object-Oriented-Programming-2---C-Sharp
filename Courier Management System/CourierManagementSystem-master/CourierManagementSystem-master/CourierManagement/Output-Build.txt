@@ -1,0 +1,4 @@
+﻿Build started...
+1>------ Build started: Project: CourierManagement, Configuration: Debug Any CPU ------
+1>  CourierManagement -> D:\Users\User\Desktop\CourierManagementSystem-master\CourierManagementSystem-master\CourierManagement\CourierManagement\bin\Debug\CourierManagement.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
